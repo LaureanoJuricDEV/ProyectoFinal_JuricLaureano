@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estile.css">
+    <title>INGRESAR</title>
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="containerLogin" id>
+        <div class="containerUser" id="containerUser">
+            <div class="containerUserImg" id="containerUserImg">
+            
+            </div>
+            <form class="formLogin" id="formLogin">
+                <input class="formLoginUser" id="formLoginUser" type="text" placeholder="Usuario" required>
+                
+                <input class="formLoginPassword" type="password" id="formLoginPassword" placeholder="Clave" required>
+                <input type="submit" class="btnLoginForm"id="btnLoginForm" value="Ingresar">
+            </form>
+            <div id="alertLogin" class="alertLogin"></div>
+            <div class="textLogin"><p>¿Aun no tienes usuario?<input type="button" value="¡Registrate aqui!" id="registerUser">
+            
+        </div>
+        
+    </div>
+         <form class="formRegister" id="formRegister">   
+            <h1>REGISTRESE AQUI</h1>
+            <input type="text" class="userValid" id="userValid" placeholder="Ingrese su usuario" required>
+            <input type="password" class="passwordValid" id="passwordValid" placeholder="Ingrese su clave" required>
+            <input type="password" class="passwordValid" id="passwordValid2" placeholder="Confirme su clave" required>
+            <input type="submit" value="Registrarse" class="btnRegister" id="btnRegister" required>
+            <div class="textAlert" id="textAlert"></div> 
+        </form>
+         
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

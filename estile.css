@@ -1,0 +1,502 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web"
+    
+}
+body{
+    background-image: url(Fondo_CoderHouse.png);
+    background-attachment:fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerLogin{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerUser{
+    background-color: rgb(52, 52, 52);
+    height: 90vh;
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;    
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    
+
+    
+}
+.containerUserImg{
+    background-color: white;
+    border-radius: 50%;
+    height: 7vh;
+    width: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.containerUserImg img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+
+}
+.formLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10%;
+    
+}
+.formLoginUser{
+height: 10vh;
+width: 80%;
+border:none;
+background:none;
+border-bottom: 1px solid white;
+font-size: 1.5rem;
+color:white;
+margin-bottom: 10%;
+}
+.formLoginUser:focus{
+    outline: none;
+    border-bottom: 1px solid white;
+    
+}
+.formLoginPassword{
+height: 10vh;
+width: 80%;
+border:none;
+background:none;
+border-bottom: 1px solid white;
+font-size: 1.5rem;
+color:white;
+}
+.formLoginPassword:focus{
+    outline: none;
+    border-bottom: 1px solid white;
+}
+.btnLoginForm{
+    cursor: pointer;
+    margin-top: 8vh;
+    height: 8vh;
+    width: 25vh;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.2rem;
+    background: black;
+    color: white;
+}
+.btnLoginForm:hover{
+background-color: #202020;
+transition: all .5s;
+}
+
+
+.textLogin{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    font-size: 1rem;
+    color: white;
+}
+.textLogin input{
+    background:none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+.textLogin input:hover{
+    text-decoration: underline;
+}
+
+
+/*-------CSS DE REGISTRO USUARIO-----*/
+.formRegister{
+    background-color: white;
+    height: 90vh;
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    display: none;
+}
+
+.formRegister h1{
+    font-size: 1.5rem;
+    margin-top: -5%;
+    margin-bottom: 15%;
+}
+
+.userValid{
+    border: none;
+    border-bottom:1px solid black;
+    width:20vw;
+    height:10vh;
+    font-size:1.5rem;
+    color: black;
+    margin:1%;
+}
+.passwordValid{
+
+    border: none;
+    border-bottom:1px solid black;
+    width:20vw;
+    height:10vh;
+    font-size:1.5rem;
+    color: black;
+    margin:2%;
+}
+.userValid:focus{
+    outline: none
+}
+.userValid::placeholder{
+    color: black;
+    font-family: sans-serif;
+    opacity: .5;
+}
+.passwordValid::placeholder{
+    color: black;
+    font-family: sans-serif;
+    opacity: .5;
+}
+.passwordValid:focus{
+    outline: none
+}
+.btnRegister{
+    height: 5vh;
+    width: 15vw;
+    border: none;
+    background-color:#202020;
+    color: white;
+    font-size: 1rem;
+    border-bottom-left-radius: 30px;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.btnRegister:hover{
+    background: black;
+    transition: all .5s;
+}
+.textAlert{
+    margin-top: 5%;
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 15px;
+}
+.alertLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    border-radius: 5px;
+    width: 80%;
+    color: white;
+}
+
+/*-------------CSS DE MAIN----------*/
+.containerWelcomeUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.containerWelcomeUser p{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #005D11;
+    border-radius: 15px;
+    color: white;
+    height: 10vh;
+    width: 30vw;
+    margin-bottom: 10%;
+}
+.containerWelcomeUser span{
+    margin-left: 3%;
+}
+.containerWelcomeUser h2{
+    font-size:2rem;
+    text-align: center;
+}
+
+
+
+.container{
+    background-color: rgb(28, 28, 28);
+    width: 70%;
+    height: 60vh;
+    margin-top:5%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 15px;
+}
+.containerInput{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.containerInput input{
+    height: 7vh;
+    width: 14vw;
+    font-size: 1.5rem;
+    margin: 5%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color:white;
+    background-color: rgb(70, 159, 255);
+    border-radius: 5px;
+}
+.containerInput input:hover{
+    background-color: rgb(46, 105, 169);  
+    transition: all .5s;
+
+}
+
+.containerImg{
+    
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    
+}
+.formCargar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*-----TRABAJOSMO CON LOS INPUTS*--*/
+
+.containerCargar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.saldo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 105, 91);
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+    height: 7vh;
+    width: 40vw;
+    color: white;
+    font-size: 1.5rem;    
+}
+.tittleMovimiento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 105, 91);
+    border-bottom-right-radius: 10px;
+    height: 7vh;
+    width: 80%;
+    margin-top: 2%;
+    color: white;
+    font-size: 1.5rem;
+}
+.inputCargar{
+background:none;
+border: none;
+border-bottom: 1px solid black;
+width: 25vw;
+height: 12vh;
+font-size: 1.5rem;
+margin-bottom: 20%;
+}
+.inputCargar:focus{
+    outline: none;
+}
+
+.btnAcreditar{
+margin-bottom: 5%;
+background-color:  rgb(0, 63, 0);
+border: none;
+width: 10vw;
+height: 10vh;
+border-radius: 5px;
+font-size: 1.5rem;
+color: white;
+cursor: pointer;
+}
+
+.btnAcreditar:hover{
+background-color: rgb(0, 112, 0);
+}
+
+/*-----CONTAINER DEBITAR*/
+.formDebitar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.containerDebitar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.inputDebitar{
+background:none;
+border: none;
+border-bottom: 1px solid black;
+width: 25vw;
+height: 12vh;
+font-size: 1.5rem;
+margin-bottom: 20%;
+}
+.inputDebitar:focus{
+    outline: none;
+}
+
+.btnDebitar2{
+margin-bottom: 5%;
+background-color:  rgb(99, 0, 0);
+border: none;
+width: 10vw;
+height: 10vh;
+border-radius: 5px;
+font-size: 1.5rem;
+color: white;
+cursor: pointer;
+}
+
+.btnDebitar2:hover{
+background-color: rgb(156, 0, 0);
+}
+
+/*-------------------CONTAINER DE MOVIMIENTOS-------------*/
+.containerMovimiento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 80%;
+    
+}
+.containerInputMovimiento{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2vh;
+    height: 10vh;
+    width: 100%;
+}
+.inputMovimientoCargar{
+height: 7vh;
+width: 20vh;
+border-radius: 5px;
+border:none;
+font-size: 1.5rem;
+cursor: pointer;
+background: green;
+color:white;
+}
+
+.registroMovimientos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 5%;
+    height: 20vh;
+    color: black;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+.containerApi{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-top: 2%;
+}
+
+.cerrarSesion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    border-radius: 5px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    width: 15vw;
+    height: 8vh;
+   
+}
+.cerrarSesion:hover{
+    background-color:rgb(38, 38, 38);
+    color: white;
+    transition: all .5s;
+}
+
+/*----------MODIFACION DE CONTAINER'S PARA TRABAJAR CON JS-------------*/
+.containerMercado{
+ display: none;
+}
+.containerCargar{
+display: none;
+}
+.containerDebitar{
+display: none;
+}
+.containerMovimiento{
+   display: none; 
+}
+
+
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estile.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>BANCO CODER</title>
+</head>
+
+<body>
+<nav>
+  <div class="saldo">
+    <p>Su saldo actual es de $<span id="saldoTotal">0</span></p>
+  </div>
+</nav>
+  <!--CONTAINER DE INPUTS-->
+  
+  <div class="container">
+    <div class="containerInput">
+      <input type="button" value="Cargar dinero" class="btnCargar" id="btnCargar">
+      <input type="button" value="Debitar dinero" class="btnDebitar" id="btnDebitar">
+      <input type="button" value="Movimientos" class="btnMovimiento" id="btnMovimiento">
+      <input type="button" value="Mercado  hoy" class="btnMercado" id="btnMercado">
+      
+    </div>
+    
+    <!---CONTAINER MENU-->
+
+   
+
+    <div class="containerImg">
+      <!--CONTAINER DE BIENVENIDA AL USUARIO-->
+      <div class="containerWelcomeUser" id="containerWelcomeUser">
+        <p>BIENVENIDO <span id="welcomeUser"></span></p>
+        <h2>¿Que desea realizar el día de hoy?</h2>
+      </div>
+      <!--CONTAINER DE CARGAR-->
+      <div class="containerCargar" id="containerCargar">
+
+        <form class="formCargar" id="formCargar">
+          <input type="number" placeholder="Monto a acreditar" class="inputCargar" id="inputCargar" required>
+          <input type="submit" value="Acreditar" class="btnAcreditar" id="btnAcreditar">
+        </form>
+
+      </div>
+      <!--CONTAINER DE DEBITAR-->
+      <div class="containerDebitar" id="containerDebitar">
+
+        <form class="formDebitar" id="formDebitar">
+          <input type="number" placeholder="Monto a debitar" class="inputDebitar" id="inputDebitar" required>
+          <input type="submit" value="Debitar" class="btnDebitar2" id="btnDebitar2">
+        </form>
+
+      </div>
+
+      <!--CONAINER DE MOVIMIENTOS-->
+      <div class="containerMovimiento" id="containerMovimiento">
+
+        <div class="tittleMovimiento">
+          <p>Ultimas Operaciones </p>
+        </div>
+        <div class="containerInputMovimiento" id="containerInputMovimiento">
+          <input type="button" value="Observar" class="inputMovimientoCargar" id="inputMovimientoCargar">
+          
+        </div>
+        <p id="registroMovimientos" class="registroMovimientos">HOLAA</p>
+        
+
+
+      </div>
+      <!--CONTAINER DE MERCADO-->
+      <div class="containerMercado" id="containerMercado">
+                  
+        <div class="containerApi" id="containerApi"></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+<footer>
+  <div>
+    <a href="index.html" class="cerrarSesion">Cerrar sesion</a>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <script src="main.js"></script>
+</body>
